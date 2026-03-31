@@ -86,7 +86,7 @@
 
   .hero-shell {
     background: var(--sage);
-    min-height: 100vh;
+    min-height: auto;
     padding: 90px 48px 80px;
     position: relative;
     z-index: 1;
