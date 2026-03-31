@@ -4,203 +4,85 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wear Your Kind</title>
-  <style>
-    :root {
-      --sage: #b8c9b9;
-      --cream: #f4f1e8;
-      --green: #5e9b69;
-      --text: #111111;
-      --max-width: 1280px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--text);
-      background: var(--cream);
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .site-header {
-      background: var(--sage);
-      padding: 36px 40px;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
-
-    .nav-wrap {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 28px;
-    }
-
-    .brand {
-      flex: 0 0 auto;
-    }
-
-    .brand img {
-      width: 140px;
-      height: auto;
-      margin-top: 4px;
-    }
-
-    .main-nav {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      gap: clamp(28px, 8vw, 140px);
-      flex-wrap: wrap;
-    }
-
-    .main-nav a {
-      font-size: clamp(1.1rem, 1.6vw, 1.4rem);
-      font-weight: 400;
-      line-height: 1.2;
-      position: relative;
-      padding: 6px 4px;
-      transition: color .15s ease;
-    }
-
-    .main-nav a:hover {
-      color: var(--green);
-    }
-
-    .hero {
-      background: var(--cream);
-      min-height: calc(100vh - 170px);
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      width: 100%;
-      padding: 60px 72px 90px;
-    }
-
-    .hero h1 {
-      margin: 0 0 40px;
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.2;
-      font-weight: 400;
-      letter-spacing: -0.02em;
-      max-width: 1000px;
-    }
-
-    .hero p {
-      margin: 0 0 70px;
-      font-size: clamp(1.15rem, 1.8vw, 1.4rem);
-      line-height: 1.45;
-      font-weight: 400;
-      max-width: 800px;
-    }
-
-    .cta-row {
-      display: flex;
-      justify-content: center;
-      gap: clamp(40px, 15vw, 260px);
-      flex-wrap: wrap;
-    }
-
-    .cta-link {
-      color: var(--green);
-      font-size: clamp(1.5rem, 2.2vw, 2rem);
-      font-weight: 700;
-      line-height: 1.1;
-      transition: transform .12s ease, color .12s ease;
-    }
-
-    .cta-link:hover {
-      transform: translateY(-2px);
-      color: #4b8757;
-    }
-
-    @media (max-width: 900px) {
-      .site-header {
-        padding: 22px 18px;
-      }
-
-      .nav-wrap {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .main-nav {
-        width: 100%;
-        justify-content: flex-start;
-        gap: 18px 34px;
-      }
-
-      .hero-inner {
-        padding: 52px 22px 72px;
-      }
-
-      .hero h1 {
-        margin-bottom: 36px;
-      }
-
-      .hero p {
-        margin-bottom: 56px;
-      }
-
-      .cta-row {
-        justify-content: flex-start;
-        gap: 24px 40px;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="nav-wrap">
-      <a class="brand" href="#home" aria-label="Wear Your Kind home">
-        <img src="logo.png" alt="Wear Your Kind logo" />
+
+  <header class="top-nav">
+    <div class="top-nav-inner">
+
+      <a href="index.html" class="brand">
+        <img src="images/wear-your-kind-logo.png" alt="Wear Your Kind logo">
       </a>
 
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="mission.html">Mission</a>
-        <a href="#involved">Get Involved</a>
-        <a href="#donate">Donate</a>
-      </nav>
+      <nav class="main-nav">
+
+  <a href="index.html">Home</a>
+
+  <div class="nav-item">
+    <a href="about.html">About Us</a>
+    <div class="dropdown">
+      <a href="missionvalues.html">Mission & Values</a>
+      <a href="comingsoon.html">Our Team</a>
+    </div>
+  </div>
+
+  <a href="getinvolved.html">Get Involved</a>
+
+  <div class="nav-item">
+    <a href="comingsoon.html">Events</a>
+    <div class="dropdown">
+      <a href="comingsoon.html">Current Events</a>
+      <a href="comingsoon.html">Past Events</a>
+      <a href="comingsoon.html">Future Events</a>
+    </div>
+  </div>
+
+  <a href="#">Donate</a>
+  <a href="comingsoon.html">Shop</a>
+
+</nav>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/wear.your.kind/"><img src="images/instagram.svg" alt="Instagram"></a>
+    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+  </div>
+
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-inner">
-        <h1>Helping restore dignity through clothing and community support.</h1>
-        <p>Wear Your Kind connects donated clothing with people who need it most.</p>
+  <main class="hero-shell">
+    <div class="hero-inner">
 
-        <div class="cta-row">
-          <a class="cta-link" id="involved" href="#">Get Involved</a>
-          <a class="cta-link" id="donate" href="#">Donate</a>
-        </div>
+    <div class="brush-banner">
+    <img src="images/brushstroke.png" alt="" class="brush-bg">
+    <span>Building Connections, Delivering Community!</span>
+    </div>
+
+      <div class="image-placeholder">
+      <img src="images/hero.png" alt="Community group">
       </div>
-    </section>
 
-    
+      <div class="cta-section">
+  <h2>$10,000. 50 people clothed.</h2>
+  <p>Direct help. Real people.</p>
+
+  <div class="cta-buttons">
+    <a href="getinvolved.html" class="btn primary">Get Involved</a>
+    <a href="#" class="btn secondary">Donate</a>
+  </div>
+</div>
+
+    </div>
   </main>
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 Wear Your Kind LLC. Built with community in Chicago.</p>
+  </div>
+</footer>
+
 </body>
 </html>
