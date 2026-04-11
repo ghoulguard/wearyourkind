@@ -86,7 +86,7 @@
 
   .hero-shell {
     background: var(--sage);
-    min-height: auto;
+    min-height: 100vh;
     padding: 90px 48px 80px;
     position: relative;
     z-index: 1;
@@ -634,4 +634,122 @@
 
 .coming-button:hover {
   opacity: 0.92;
+}
+
+/* ================= DONATE PAGE ================= */
+
+.donate-page .hero-shell {
+  background: #dfe8e3;
+  padding: 40px 20px 80px;
+}
+
+.donate-intro {
+  max-width: 700px;
+  margin: 20px auto 40px;
+  text-align: center;
+  color: var(--teal);
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* OPTIONS GRID */
+
+.donate-options {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+
+.donate-card {
+  background: #f7f3ec;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  color: var(--teal);
+}
+
+.donate-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.donate-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+/* QR */
+
+.qr-code {
+  width: 180px;
+  margin: 0 auto;
+}
+
+/* IMPACT */
+
+.donate-impact {
+  margin: 60px auto 0;
+  text-align: center;
+  color: var(--teal);
+}
+
+.donate-impact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.donate-impact p {
+  font-size: 18px;
+  opacity: 0.85;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .donate-options {
+    grid-template-columns: 1fr;
+  }
+}
+
+.donate-page .brush-banner.small {
+  max-width: 560px;
+}
+
+.donate-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-action {
+  margin-top: 40px;
+}
+
+.donate-page .donate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-page .donate-card .btn.primary {
+  margin-top: 36px;
+}
+
+.donate-page .qr-code {
+  width: 185px;
+  margin-top: 26px;
+}
+
+.donate-card-paypal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-card-paypal .donate-action {
+  margin-top: 70px;
 }
