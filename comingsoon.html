@@ -3,92 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wear Your Kind</title>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>Coming Soon | Wear Your Kind</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="coming-page">
 
-  <header class="top-nav">
-    <div class="top-nav-inner">
+  <header class="site-header">
+    <a href="index.html" class="site-logo">
+      <img src="images/wear-your-kind-logo.png" alt="Wear Your Kind logo">
+    </a>
 
-      <a href="index.html" class="brand">
-        <img src="images/wear-your-kind-logo.png" alt="Wear Your Kind logo">
-      </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-pill nav-yellow">Home</a>
 
-      <nav class="main-nav">
-
-        <a href="index.html">Home</a>
-
-        <div class="nav-item">
-          <a href="about.html">About Us</a>
-          <div class="dropdown">
-            <a href="missionvalues.html">Mission & Values</a>
-            <a href="#">Our Team</a>
-          </div>
+      <div class="nav-dropdown">
+        <a href="about.html" class="nav-pill nav-red">About Us</a>
+        <div class="dropdown-menu">
+          <a href="missionvalues.html">Mission & Values</a>
+          <a href="ourteam.html">Our Team</a>
         </div>
-
-        <a href="getinvolved.html">Get Involved</a>
-
-        <div class="nav-item">
-          <a href="#">Events</a>
-          <div class="dropdown">
-            <a href="comingsoon.html">Current Events</a>
-            <a href="comingsoon.html">Past Events</a>
-            <a href="comingsoon.html">Future Events</a>
-          </div>
-        </div>
-
-        <a href="donate.html">Donate</a>
-        <a href="comingsoon.html">Shop</a>
-
-      </nav>
-
-      <div class="socials">
-        <a href="https://www.instagram.com/wear.your.kind/"><img src="images/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.facebook.com/profile.php?id=61570757062983"><img src="images/facebook.svg" alt="Facebook"></a>
       </div>
 
+      <a href="getinvolved.html" class="nav-pill nav-purple">Get Involved</a>
+      <a href="events.html" class="nav-pill nav-blue">Events</a>
+      <a href="comingsoon.html" class="nav-pill nav-green">Shop</a>
+      <a href="donate.html" class="nav-pill nav-orange">Donate</a>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/profile.php?id=61570757062983" target="_blank" aria-label="Facebook">
+        <img src="images/facebook.svg" alt="">
+      </a>
+
+      <a href="https://www.instagram.com/wear.your.kind/" target="_blank" aria-label="Instagram">
+        <img src="images/instagram.svg" alt="">
+      </a>
     </div>
   </header>
 
-  <main class="hero-shell">
-    <div class="hero-inner">
+  <main class="coming-main">
 
-      <div class="brush-banner small">
-        <img src="images/brushstroke-short.png" alt="" class="brush-bg">
-        <span>Coming Soon</span>
-      </div>
+    <h1 class="green-pill-title coming-title">Coming Soon</h1>
 
-      <section class="coming-content">
-        <div class="coming-text">
-          <p>
-            We’re actively building this part of Wear Your Kind and will have
-            more to share soon.
-          </p>
+    <section class="coming-content">
 
-          <p>
-            In the meantime, if you’d like to get involved or learn more,
-            feel free to reach out directly.
-          </p>
-        </div>
+      <p>
+        We’re actively building this part of Wear Your Kind<br>
+        and will have more to share soon.
+      </p>
 
-        <a
-          class="coming-button"
-          href="mailto:info@wearyourkind.org?subject=General%20Inquiry&body=Hi%20Wear%20Your%20Kind%2C%0A%0A"
-        >
-          Contact Us
-        </a>
-      </section>
+      <p>
+        In the meantime, if you’d like to get involved or<br>
+        learn more, feel free to reach out directly.
+      </p>
 
-    </div>
+      <a
+        href="mailto:info@wearyourkind.org"
+        class="coming-contact-button"
+      >
+        Contact Us
+      </a>
+
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
-      <p>© 2026 Wear Your Kind LLC. Built with community in Chicago.</p>
-    </div>
+    <p>© 2026 Wear Your Kind LLC. Built with community in Chicago.</p>
   </footer>
 
 </body>
